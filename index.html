@@ -1,31 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <title>BC WildWatch</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-body{
-font-family: Arial;
-text-align:center;
-background:#f4f4f4;
+
+html, body{
+    margin:0;
+    padding:0;
+    height:100%;
+    font-family: Arial;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+}
+
+.header{
+    text-align:center;
+    background:#2c3e50;
+    color:white;
+    padding:15px;
+}
+
+.header h1{
+    margin:5px;
+}
+
+.header p{
+    margin:0;
 }
 
 iframe{
-width:90%;
-height:800px;
-border:none;
+    flex:1;
+    width:100%;
+    border:none;
 }
+
 </style>
 
 </head>
 
 <body>
 
-<h1>BC WildWatch™</h1>
+<div class="container">
 
-<p>Report dangerous or nuisance animals on campus.</p>
+<div class="header">
+<h1>BC WildWatch™</h1>
+<p>Report dangerous animals on campus</p>
+</div>
 
 <iframe src="https://apps.powerapps.com/play/e/default-ea1a909b-6600-4a25-82a5-0c6ed7d0513b/a/9f6a777b-057c-408c-b45d-2c74234ced32?tenantId=ea1a909b-6600-4a25-82a5-0c6ed7d0513b&hint=d855bae2-ed25-455c-9f65-831ad200d5f0&sourcetime=1772969098679"></iframe>
+
+</div>
 
 </body>
 </html>
